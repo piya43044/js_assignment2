@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Management</title>
+
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div>
+            <!-- Add the Employee Details -->
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="empId">Id</label>
+                    <input type="number" id="empId" name="empId" required><br><br>
+                    <label for="designation">designation</label>
+                    <input type="text" id="designation" name="designation" required><br><br>
+                    <button id="addButton">
+                        <a href="">
+                            Add employee
+                        </a>
+                    </button>
+                </div>
+            </form>
+            <br>
+
+            <!-- Employees Edit details -->
+            <div id="edit-container">
+                <button id="editButton">
+                    <a href="">
+                        Edit details
+                    </a>
+                </button>
+                <form id="edit-form"></form>
+            </div>
+            <br>
+            
+            <!-- View the employees Details -->
+            <div>
+                <button id="viewButton">
+                    <a href="">
+                        View details
+                    </a>
+                </button>
+                <br><br>
+                <table border="1" width="100%" id="viewtable">
+                    <!-- <tr>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Employee Address</th>
+                        <th>Employee Designation</th>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script typr="module" src="script.js"></script>
+
+    </body>
+</html>
